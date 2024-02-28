@@ -1,0 +1,387 @@
+/*home.html*/
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-size: 12px;
+    margin: 0px;
+    background-color: #ebebeb;
+}
+
+/*Header*/
+
+header {
+    background-color: #EAC926 ;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: block;
+}
+
+.main-header-top-bar {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.logoML {
+    width: 33%;
+    margin-top: 0px;
+    margin-right: 15px;
+}
+
+.barra-busqueda {
+    height: 20px;
+    width: 33%;
+    margin-left: 0px;
+    border-radius: 4px 0 0 4px;
+    border: 0;
+    outline: none;
+    }
+
+.lupa {
+    background-color: white;
+    padding: 4px ;
+    position: relative;
+    border: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0 5px 5px 0;
+}
+
+.eslogan {
+    font-size: 15px;
+    width: 33%;
+}
+
+/*main-navbar*/
+.right-navbar, .left-navbar {
+    text-decoration: none;
+    color: #222222;
+    padding: 5px 0;
+    font-size: 17px;
+    display: none;
+}
+/*main-navbar*/
+
+ul {
+    list-style-type: none;
+}
+
+.burger-menu i {
+    background-color: rgb(26, 26, 177);
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+/*Fin Header*/
+
+.imagen-banner {
+    margin-top: 0px;
+    margin-bottom: -4px;
+}
+
+/*Main*/
+
+main {
+    background-color: #ebebeb;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 18px;
+    font-weight: bold;
+    color: #666;
+    text-align: left;
+}
+
+.seccion-ofertas {
+    padding: 0px 18px;
+    margin-top: 18px;
+}
+
+.seccion-articulos {
+    padding: 0px 18px;
+    margin-top: 18px;
+}
+
+.producto {
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.imagenes-productos {
+    width: 100%;
+    display: block;
+}
+
+.info-producto{
+    border-top: 1px solid #ebebeb ;
+    text-align: left;
+    width: 100%;
+    padding: 15px;
+    position: relative;
+    justify-content: space-between;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.precio {
+    font-size: 18px;
+    margin-left: 15px;
+    width: 30%;
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+    margin-left: 30px;
+    width: 70%;
+}
+
+.precio-y-descuento {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    width: 100%;
+}
+
+.info-producto i {
+    color: #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+.info-producto:hover i{
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.nombre {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 20px;
+    display: none;
+}
+
+/*Fin Main*/
+/*Footer*/
+
+.footer{
+    text-align: center;
+
+}
+
+
+
+.footer-contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer article {
+    margin: 20px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pago,
+.envio,
+.seguridad {
+    font-weight: bold;
+}
+
+.iconito {
+    color: blue;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.iconito:hover{
+    color: lightblue
+}
+
+
+#copyright p {
+    text-align: left;
+    position: relative;
+    padding-left: 15px;
+}
+
+/*Fin Footer*/
+/*Medias Queries*/
+
+@media (min-width: 361px){
+    .producto {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        padding: 16px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .nombre {
+        display: block;
+    }
+    .seccion-ofertas , .seccion-articulos{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .titulo {
+        width: 100%;
+    }
+    .precio-y-descuento {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 50%;
+    }
+    .articulos-info {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: row;
+    }
+    .seccion-articulos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .seccion-ofertas {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+ 
+
+}
+
+@media (min-width: 769px){
+    .burger-menu {
+        display: none;
+    }
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-between;
+        }
+    .eslogan {
+        min-width: 280px;
+        text-align: right;
+        }
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul {
+        display: flex;
+    }
+    .main-navbar li {
+        margin: 0 15px;
+    }
+    .right-navbar, .left-navbar {
+        display: block;
+    }
+
+    .producto {
+        width: 25%;
+    }
+
+    .info-producto {
+        box-shadow: none;
+        transition: all 1s;
+    }
+
+    .info-producto:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .footer-contenido {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }   
+    
+    .info-producto:hover .nombre {
+        display: initial;
+    }
+
+    .nombre {
+        display: none;
+    }
+    .footer-login {
+        position: absolute;
+        bottom: 0%;
+    }
+
+}
+
+/*Fin Medias Queries*/
+
+/*login.html*/
+
+.input-nombre-apellido,
+.input-usuario,
+.input-password,
+.boton-envio,
+.input-domicilio,
+.input-email,
+.input-date,
+.boton-enviar,
+.boton-reset {
+    border-radius: 5px;
+}
+
+.input-password {
+    margin-top: 10px;
+}
+
+.boton-envio {
+    margin-top: 30px;
+    margin-bottom: 47px;
+}
+
+
